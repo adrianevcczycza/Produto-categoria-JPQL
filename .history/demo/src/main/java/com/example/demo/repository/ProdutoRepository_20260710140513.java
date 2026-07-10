@@ -1,0 +1,16 @@
+package com.example.demo.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.model.Produto;
+
+@Repository
+public interface ProdutoRepository extends JpaRepository <Produto,Long> {
+    List<Produto> findByCategoria_Id(Long categoriaId);
+    List<Produto> findByCategoria_Nome (String nome);
+    List<Produto> findByProduto
+    
+}
