@@ -10,7 +10,6 @@ import com.example.demo.model.Categoria;
 
 @Component
 public class CategoriaMapper {
-    
     public Categoria toEntity(CategoriaRequestDto dto){
         if (dto == null){
             return null;

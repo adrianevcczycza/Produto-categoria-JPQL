@@ -6,7 +6,7 @@ import com.example.demo.model.Categoria;
 import com.example.demo.model.Produto;
 
 public class ProdutoMapper { 
-    public Produto toEntity (ProdutoRequestDto dto, Categoria categoria){
+        public Produto toEntity (ProdutoRequestDto dto, Categoria categoria){
          if (dto == null) {
              return null;
          }
@@ -19,7 +19,6 @@ public class ProdutoMapper {
              categoria
             );
      }
-     
      public ProdutoResponseDto toResponseDto (Produto produto){
          if (produto ==  null) {
              return null;
@@ -33,4 +32,5 @@ public class ProdutoMapper {
              produto.getCategoria().getId()
          );    
      }
+
  }

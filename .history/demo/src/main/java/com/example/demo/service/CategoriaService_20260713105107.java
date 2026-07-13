@@ -2,7 +2,8 @@ package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 
-
+import com.example.demo.dto.CategoriaRequestDto;
+import com.example.demo.dto.CategoriaResponseDto;
 import com.example.demo.mapper.CategoriaMapper;
 
 import com.example.demo.repository.CategoriaRepository;

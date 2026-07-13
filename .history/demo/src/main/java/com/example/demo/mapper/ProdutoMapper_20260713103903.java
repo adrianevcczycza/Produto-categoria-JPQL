@@ -19,7 +19,6 @@ public class ProdutoMapper {
              categoria
             );
      }
-     
      public ProdutoResponseDto toResponseDto (Produto produto){
          if (produto ==  null) {
              return null;
@@ -33,4 +32,5 @@ public class ProdutoMapper {
              produto.getCategoria().getId()
          );    
      }
+
  }

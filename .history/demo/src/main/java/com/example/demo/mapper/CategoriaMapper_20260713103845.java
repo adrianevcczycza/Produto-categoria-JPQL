@@ -10,7 +10,8 @@ import com.example.demo.model.Categoria;
 
 @Component
 public class CategoriaMapper {
-    
+   
+
     public Categoria toEntity(CategoriaRequestDto dto){
         if (dto == null){
             return null;
@@ -18,8 +19,7 @@ public class CategoriaMapper {
         return new Categoria(
             dto.nome()
         );
-    } 
-    public CategoriaResponseDto toResponseDto (Categoria categoria){
+    } public CategoriaResponseDto toResponseDto (Categoria categoria){
         if (categoria ==null){
             return null;
         }
